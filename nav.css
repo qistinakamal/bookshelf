@@ -1,7 +1,22 @@
 @media only screen and (max-width: 900px) {
-  nav{
+  nav {
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
+
+  .home_nav {
+    width: 100%;
+  }
+
+  .book_button,
+  .author_button,
+  .suggestion_button,
+  .gift_button,
+  .about_button {
+    width: 100%;
+  }
+
 }
 
 nav {
@@ -17,11 +32,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   color: white;
-}
-
-.home-nav {
-  padding: 20px;
-  margin: 20px;
 }
 
 .logo {
@@ -49,4 +59,13 @@ nav {
 .action_button,
 .login_section {
   margin-left: 20px;
+}
+
+.login_button {
+  border: none;
+  background-color: #F4BA30;
+  color: white;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 10px;
 }
