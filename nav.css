@@ -1,0 +1,52 @@
+@media only screen and (max-width: 900px) {
+  nav{
+    flex-wrap: wrap;
+  }
+}
+
+nav {
+  padding: 20px 24px;
+  margin: 10px auto;
+  border: none;
+  border-radius: 30px;
+  max-width: 1200px;
+  min-height: 96px;
+  background-color: #2A2C2E;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.home-nav {
+  padding: 20px;
+  margin: 20px;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  float: left;
+}
+
+.book_button,
+.author_button,
+.suggestion_button,
+.gift_button,
+.about_button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  padding: 10px 15px;
+}
+
+.action_button {
+  color: white;
+}
+
+.action_button,
+.login_section {
+  margin-left: 20px;
+}

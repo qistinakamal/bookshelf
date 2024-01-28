@@ -1,0 +1,65 @@
+@media only screen and (max-width: 900px) {
+   .book_layout {
+    flex:1;
+    flex-wrap: nowrap;
+   }
+
+ }
+
+main {
+  border: solid;
+  max-width: 100%;
+  min-height: 1847px;
+  background-color: #2A2C2E;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px 20px;
+}
+
+.book_layout {
+  border: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px; 
+}
+
+.book_container {
+  border: none;
+  border-radius: 20px;
+  height: auto;
+  width: 294px;
+  background-color: white;
+  padding: 24px;
+}
+
+.book_info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.book_cover {
+  border-radius: 20px;
+  width: 100%;
+}
+
+.icon_button{
+  border: solid rgb(167, 167, 167);
+  background-color: transparent;
+  border-radius: 20px;
+  border-width: 0.2px;
+}
+
+.icon_button:hover {
+  background-color: #F4CE47;
+  color: white;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.price{
+  display: flex;
+  flex-direction: row;
+}

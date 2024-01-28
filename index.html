@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css"/>
+  <link rel="stylesheet" href="./nav.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    body{
+      margin:0;
+      padding:0;
+      box-sizing: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    header{
+      margin: 10px 0px;
+      border: none;
+      max-width: 100%;
+      min-height: 100px;
+      background-color: #F4CE47;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      text-wrap: nowrap;
+      overflow: hidden;
+    }
+
+    h1{
+      padding: 0px 15px;
+      color: #F4BA30;
+      font-weight: 300px;
+    }
+
+    .banner_text{
+      color: black;
+    }
+
+    .icon{
+      display: flex;
+      flex-direction: row;
+      gap:20px
+    }
+
+    i{
+      padding:10px;
+    }
+
+    .login_button{
+      border: none;
+      background-color: #F4BA30;
+      color: white;
+      font-size: 18px;
+      padding: 10px 15px;
+      border-radius: 10px;
+    }
+
+    .book_button:hover, .author_button:hover, .suggestion_button:hover, .gift_button:hover, .about_button :hover, #search_button:hover, #bookmark_button:hover, #cart_button:hover {
+      color: #F4CE47;
+      cursor: pointer;
+      transition: 0.6s;
+    }
+
+    .login_button:hover{
+      color: #F4CE47;
+      background-color: white;
+      cursor: pointer;
+      transition: 0.6s;
+    }
+
+    .up{
+      padding: 20px 24px;
+      margin:10px auto 0px auto;
+      border: none;
+      max-width: 1200px;
+      min-height: 96px;
+      background-color: #2A2C2E;
+      display: flex;
+      flex-direction: row; 
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+    
+    @media only screen and (max-width: 900px) {
+      .down{
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+    .down{
+      padding: 20px 24px;
+      margin: 0 auto;
+      border: none;
+      max-width: 1200px;
+      min-height: 40px;
+      background-color: #000000DE;
+      display: flex;
+      flex-direction: row; 
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+   .social_media, .privacy, .contact{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap:20px
+    }
+
+    #insta_button:hover, #fb_button:hover, #x_button:hover{
+      color: #F4CE47;
+      cursor: pointer;
+      transition: 0.6s;
+    }
+  </style>
+</head>
+
+<body>
+      <nav>
+        <div>
+          <img class="logo" src="image\Logo.svg">
+        </div>
+
+        <div class="home_nav">
+            <button class="book_button">Books</button>
+            <button class="author_button">Authors</button>
+            <button class="suggestion_button">What to Read?</button>
+            <button class="gift_button">Gift Ideas</button>
+            <button class="about_button">About Us</button>
+        </div>
+        
+        <div class="icon">
+          <div class="action_button">
+            <i class="fa-solid fa-magnifying-glass" id="search_button"></i>
+            <i class="fa-regular fa-bookmark" id="bookmark_button"></i>
+            <i class="fa-solid fa-bag-shopping" id="cart_button"></i>
+          </div>
+          <div class="login_section">
+            <button class="login_button">LOGIN</button>
+          </div>
+        </div>
+      </nav>
+    
+    
+    <header>
+      <h1>ALL BOOKS</h1>
+      <h1>ALL BOOKS</h1>
+      <h1 class="banner_text">ALL BOOKS</h1>
+      <h1>ALL BOOKS</h1>
+      <h1>ALL BOOKS</h1>
+    </header>
+    
+    <main>
+      <div class="book_layout">
+        <div class="book_container">
+          <div class="book_content">
+            <img class="book_cover" src="image\tellthewolvesimhome 1 (1).svg" alt="The Names">
+              <div class="book_info">
+                <p>
+                  Don Delilo
+                </p>
+                <h3>
+                  The Names
+                </h3>
+                <div>
+                  <button class="icon_button">
+                    14 <i class="fa-regular fa-message"></i>
+                  </button>
+                  <button class="icon_button">
+                    4.6 <i class="fa-regular fa-star"></i> (165)
+                  </button>
+                </div>
+                <div class="price">
+                  <p class="net_price">
+                    $10.50
+                  </p>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="book_container">
+          <div class="book_content">
+            <img class="book_cover" src="image\tellthewolvesimhome 1 (2).svg">
+              <div class="book_info">
+                <p>
+                  Alan Trotter
+                </p>
+                <h3>
+                  Muscle
+                </h3>
+                <div>
+                  <button class="icon_button">
+                    14 <i class="fa-regular fa-message"></i>
+                  </button>
+                  <button class="icon_button">
+                    4.6 <i class="fa-regular fa-star"></i> (165)
+                  </button>
+                </div>
+                <div class="price">
+                  <p class="net_price">
+                    $22.50
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      <div class="book_container">
+        <div class="book_content">
+          <img class="book_cover" src="image\tellthewolvesimhome 1 (3).svg" alt="More Than This">
+            <div class="book_info">
+              <p>
+                Patrick Ness
+              </p>
+              <h3>
+                More Than This
+              </h3>
+              <div>
+                <button class="icon_button">
+                  14 <i class="fa-regular fa-message"></i>
+                </button>
+                <button class="icon_button">
+                  4.6 <i class="fa-regular fa-star"></i> (165)
+                </button>
+              </div>
+              <div class="price">
+                <p class="net_price">
+                  $10.50
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+
+    <div class="book_layout">
+      <div class="book_container">
+        <div class="book_content">
+          <img class="book_cover" src="image\tellthewolvesimhome 1 (4).svg" alt="Hello I am Erik">
+            <div class="book_info">
+              <p>
+                Erik Spiekermann
+              </p>
+              <h3>
+                Hello I am Erik
+              </h3>
+              <div>
+                <button class="icon_button">
+                  14 <i class="fa-regular fa-message"></i>
+                </button>
+                <button class="icon_button">
+                  4.6 <i class="fa-regular fa-star"></i> (165)
+                </button>
+              </div>
+              <div class="price">
+                <p class="net_price">
+                  $10.50
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="book_container">
+          <div class="book_content">
+            <img class="book_cover" src="image\tellthewolvesimhome 1 (5).svg" alt="The Godfather">
+              <div class="book_info">
+                <p>
+                  Mario Puzo
+                </p>
+                <h3>
+                  The Godfather
+                </h3>
+                <div>
+                  <button class="icon_button">
+                    14 <i class="fa-regular fa-message"></i>
+                  </button>
+                  <button class="icon_button">
+                    4.6 <i class="fa-regular fa-star"></i> (165)
+                  </button>
+                </div>
+                <div class="price">
+                  <p class="net_price">
+                    $15.50
+                  </p>
+                </div>
+              </div>
+          </div>
+        </div>
+        
+        <div class="book_container">
+          <div class="book_content">
+            <img class="book_cover" src="image\tellthewolvesimhome 1 (6).svg">
+              <div class="book_info">
+                <p>
+                  Adam Smith
+                </p>
+                <h3>
+                  The Wealth of National
+                </h3>
+                <div>
+                  <button class="icon_button">
+                    14 <i class="fa-regular fa-message"></i>
+                  </button>
+                  <button class="icon_button">
+                    4.6 <i class="fa-regular fa-star"></i> (165)
+                  </button>
+                </div>
+                <div class="price">
+                  <p class="net_price">
+                    $15.50
+                  </p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="book_layout">
+        <div class="book_container">
+          <div class="book_content">
+            <img class="book_cover" src="image\tellthewolvesimhome 1 (7).svg">
+              <div class="book_info">
+                <p>
+                  Adam Smith
+                </p>
+                <h3>
+                  The Wealth of National
+                </h3>
+                <div>
+                  <button class="icon_button">
+                    14 <i class="fa-regular fa-message"></i>
+                  </button>
+                  <button class="icon_button">
+                    4.6 <i class="fa-regular fa-star"></i> (165)
+                  </button>
+                </div>
+                <div class="price">
+                  <p class="net_price">
+                    $15.50
+                  </p>
+                </div>
+              </div>
+          </div>
+        </div>
+      
+        <div class="book_container">
+          <div class="book_content">
+            <img class="book_cover" src="image\tellthewolvesimhome 1 (8).svg">
+              <div class="book_info">
+                <p>
+                  Adam Smith
+                </p>
+                <h3>
+                  The Wealth of National
+                </h3>
+                <div>
+                  <button class="icon_button">
+                    14 <i class="fa-regular fa-message"></i>
+                  </button>
+                  <button class="icon_button">
+                    4.6 <i class="fa-regular fa-star"></i> (165)
+                  </button>
+                </div>
+                <div class="price">
+                  <p class="net_price">
+                    $15.50
+                  </p>
+                </div>
+              </div>
+          </div>
+        </div>
+      
+        <div class="book_container">
+          <div class="book_content">
+            <img class="book_cover" src="image\tellthewolvesimhome 1.svg">
+              <div class="book_info">
+                <p>
+                  Adam Smith
+                </p>
+                <h3>
+                  The Wealth of National
+                </h3>
+                <div>
+                  <button class="icon_button">
+                    14 <i class="fa-regular fa-message"></i>
+                  </button>
+                  <button class="icon_button">
+                    4.6 <i class="fa-regular fa-star"></i> (165)
+                  </button>
+                </div>
+                <div class="price">
+                  <p class="net_price">
+                    $15.50
+                  </p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+
+    <div class="up">
+      <img class="logo" src="image\Logo.svg">
+      <div class="social_media">
+        <div>
+          <i class="fa-brands fa-instagram" id="insta_button"></i>
+        </div>
+        <div>
+          <i class="fa-brands fa-facebook-f" id="fb_button"></i>
+        </div>
+        <div>
+          <i class="fa-brands fa-x-twitter" id="x_button"></i>
+        </div>
+    </div>
+  </div>
+
+  <div class="down">
+    <div class="privacy">
+      <p class="text">
+        Terms and conditions
+      </p>
+      <p class="text">
+        Privacy and policy
+      </p>
+    </div>
+    <div class="contact">
+      <p class="text">
+        +44 1332 412251
+      </p>
+      <p class="text">
+        support@bbookshelf.com
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
