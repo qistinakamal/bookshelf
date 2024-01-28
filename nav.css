@@ -40,6 +40,16 @@ nav {
   float: left;
 }
 
+.icon {
+  display: flex;
+  flex-direction: row;
+  gap: 20px
+}
+
+i {
+  padding: 10px;
+}
+
 .book_button,
 .author_button,
 .suggestion_button,
@@ -52,13 +62,17 @@ nav {
   padding: 10px 15px;
 }
 
-.action_button {
-  color: white;
-}
-
-.action_button,
-.login_section {
-  margin-left: 20px;
+.book_button:hover,
+.author_button:hover,
+.suggestion_button:hover,
+.gift_button:hover,
+.about_button :hover,
+#search_button:hover,
+#bookmark_button:hover,
+#cart_button:hover {
+  color: #F4CE47;
+  cursor: pointer;
+  transition: 0.6s;
 }
 
 .login_button {
@@ -69,3 +83,20 @@ nav {
   padding: 10px 15px;
   border-radius: 10px;
 }
+
+.login_button:hover {
+  color: #F4CE47;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.action_button {
+  color: white;
+}
+
+.action_button,
+.login_section {
+  margin-left: 20px;
+}
+

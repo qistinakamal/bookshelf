@@ -21,6 +21,7 @@
       font-family: 'Inter', sans-serif;
     }
 
+    /* banner section*/
     header{
       margin: 10px 0px;
       border: none;
@@ -46,27 +47,12 @@
       color: black;
     }
 
-    .icon{
-      display: flex;
-      flex-direction: row;
-      gap:20px
-    }
-
-    i{
-      padding:10px;
-    }
-
-    .book_button:hover, .author_button:hover, .suggestion_button:hover, .gift_button:hover, .about_button :hover, #search_button:hover, #bookmark_button:hover, #cart_button:hover {
-      color: #F4CE47;
-      cursor: pointer;
-      transition: 0.6s;
-    }
-
-    .login_button:hover{
-      color: #F4CE47;
-      background-color: white;
-      cursor: pointer;
-      transition: 0.6s;
+    /* footer elements*/
+    @media only screen and (max-width: 900px) {
+      .down{
+        display: flex;
+        flex-wrap: wrap;
+      }
     }
 
     .up{
@@ -82,13 +68,7 @@
       align-items: center;
       color: white;
     }
-    
-    @media only screen and (max-width: 900px) {
-      .down{
-        display: flex;
-        flex-wrap: wrap;
-      }
-    }
+
     .down{
       padding: 20px 24px;
       margin: 0 auto;
