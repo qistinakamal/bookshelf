@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    header {
+      padding: 20px 24px;
+      margin: 10px auto;
+      border: none;
+      border-radius: 30px;
+      max-width: 100%;
+      background-color: #2A2C2E;
+      display: flex;
+      }
+
+    .logo {
+      width: 200px;
+      height: auto;
+      float: left;
+    }
+
+    form{
+      padding: 20px 40px;
+      margin: 10px auto;
+      border-radius: 30px;
+      max-width: 100%;
+      background-color: #2A2C2E;
+      display: flex;
+      flex-direction: column;
+      color: white;
+    }
+
+    input{
+      border: none;
+      border-radius: 15px;
+      height:30px;
+      padding:2px 15px;
+    }
+
+    label{
+      height:30px;
+      padding:2px 15px;
+      line-height: 32px;
+    }
+
+    div{
+      margin: 10px;
+    }
+
+    .availability_section{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 10px;
+    }
+
+    .rule_regulation{
+      display: flex;
+      flex-direction:row;
+      justify-content: flex-start;
+    }
+
+    .availability_section > div {
+      display: flex;
+      align-items: center;
+    }
+
+    .rule_regulation > div {
+      display: flex;
+      align-items: center;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="image\Logo.svg">
+  </header>
+
+  <form method="post" action="">
+    <div>
+      <h2>
+        REGISTER YOUR BOOK
+      </h2>
+    </div>
+
+    <div>
+      <div>
+        <p>
+          Book Details
+        </p>
+      </div>
+
+      <div>
+        <label for="title">
+          Title
+        </label>
+        <input id="title" name="title" placeholder="Your book title here. E.g. Harry Potter and The Fanstatic Bootcamp">
+      </div>
+
+      <div>
+        <label for="genre">
+          Genre
+        </label>
+        <input id="genre" name="genre" placeholder="Your book genre here. E.g. Fantasy">
+      </div>
+
+      <div>
+        <label for="author">
+          Author
+        </label>
+        <input id="author" name="author" placeholder="Your book author here. E.g. J.K. Rowling">
+      </div>
+
+      <div>
+        <label for="publisher">
+          Publisher
+        </label>
+        <input id="publisher" name="publisher" placeholder="Publisher of the book. E.g.">
+      </div>
+
+      <div>
+        <label for="year_published">
+          Year Published
+        </label>
+        <input id="year_published" name="year_published" placeholder="Year">
+      </div>
+
+      <div class="availability_section">
+        <legend>
+          Availability
+        </legend>
+        <div>
+          <input type="radio" id="online">
+          <label for="online">Online</label>
+        </div>
+        <div>
+          <input type="radio" id="in_store">
+          <label for="in_store">In store</label>
+        </div>
+        <div>
+          <input type="radio" id="in_store_online">
+          <label for="in_store_online">Online & In store</label>
+        </div>
+      </div>
+
+      <div>
+        <label for="pages">
+          Pages
+        </label>
+        <input type="number" id="pages" min="0">
+      </div>
+
+      <div>
+        <label for="language">
+          Language
+        </label>
+        <input id="language" name="language" placeholder="Language used in the book. E.g.English">
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <p>
+          Registree Details
+        </p>
+      </div>
+      
+      <div>
+        <div>
+          <label for="name">
+            Name
+          </label>
+          <input id="name" name="name" placeholder="Your name. E.g. Billie Eilish">
+        </div>
+      
+        <div>
+          <label for="email">
+            Email
+          </label>
+          <input type="email" id="email" name="email" placeholder="Your email. E.g. billie.eilish@email.com">
+        </div>
+
+        <div class="rule_regulation">
+          <input type="checkbox">
+          <label>
+            I hereby agree to follow all rules and confirmed that all details are accurate
+          </label>
+        </div>
+
+        <div>
+          <button>Save Your Book</button>
+        </div>
+      </div>
+    </div>
+
+  </form>
+</body>
+</html>
